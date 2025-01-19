@@ -33,24 +33,18 @@ public class User {
 	
 	private String password;
 	
-	private String profilePicture;
-	
 	private String role;
 	
-	@Temporal(TemporalType.DATE)
-	private Date birthDate;
 	
 	
 
-	public User(String userName, String email, String password, String profilePicture,String role,
-			Date birthDate) {
+	public User(String userName, String email, String password,String role) {
 		super();
 		this.userName = userName;
 		this.email = email;
 		this.password = password;
-		this.profilePicture = profilePicture;
 		this.role = role;
-		this.birthDate = birthDate;
+
 	}
 	
 	

@@ -45,6 +45,7 @@ public class AuthController {
     	String role = user.getRole();
     	
     	
+    	
     	User isEmailExist = userRepository.findByEmail(email);
     	
     	if(isEmailExist != null) {
@@ -79,7 +80,7 @@ public class AuthController {
     	
 	}
     
-    @PostMapping("/signin")
+    @PostMapping("/login")
     public ResponseEntity<AuthResponse> signin (@RequestBody LoginRequest loginRequest){
     	
     	String username = loginRequest.getEmail();

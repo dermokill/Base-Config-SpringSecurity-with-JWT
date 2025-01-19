@@ -32,7 +32,7 @@ public class UserController {
 		return new ResponseEntity<>(user , HttpStatus.OK);
 	}
 	
-	@GetMapping
+	@GetMapping("/allUsers")
 	public ResponseEntity<List<User>> getUsers (@RequestHeader("Authorization") String jwt){
 		
 		List<User> users = userService.getAllUsers();
